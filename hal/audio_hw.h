@@ -540,7 +540,11 @@ struct audio_device {
     struct audio_device_config_param *device_cfg_params;
     unsigned int interactive_usecase_state;
     bool dp_allowed_for_voice;
+<<<<<<< HEAD
     amplifier_device_t *amp;
+=======
+    void *ext_hw_plugin;
+>>>>>>> 5de4db22a370c2a31b2c162583be44775d17b034
 };
 
 int select_devices(struct audio_device *adev,
